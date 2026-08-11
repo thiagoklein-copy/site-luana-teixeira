@@ -61,8 +61,10 @@ export default function Hero() {
             Psicóloga Clínica · Percurso em Psicanálise
           </p>
 
-          <h1 className="font-display text-4xl font-normal leading-[1.2] tracking-wide text-ink sm:text-5xl lg:text-[3.15rem]">
-            Abra a porta e pertença a cada espaço dentro de ti
+          <h1 className="max-w-xl font-display text-4xl font-normal leading-[1.2] tracking-wide text-ink sm:max-w-none sm:text-5xl lg:text-[3.15rem]">
+            Abra a porta e pertença
+            <br />
+            a cada espaço dentro&nbsp;de&nbsp;ti
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
