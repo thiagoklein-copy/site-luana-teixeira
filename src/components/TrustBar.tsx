@@ -14,12 +14,12 @@ export default function TrustBar() {
       className="border-b border-primary/25 bg-beige"
     >
       <FadeIn className="mx-auto max-w-6xl px-5 py-8 lg:px-8">
-        <ul className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-x-10 sm:gap-y-3">
+        <ul className="grid grid-cols-1 gap-4 md:grid-cols-3 md:items-center md:gap-6 lg:gap-8">
           {CREDENTIALS.map((item) => (
             <CheckItem
               key={item}
               label={item}
-              className="sm:[&>span:last-child]:text-ink sm:[&>span:last-child]:font-medium"
+              className="md:justify-center md:[&>span:last-child]:text-center md:[&>span:last-child]:text-[0.85rem] md:[&>span:last-child]:leading-snug md:[&>span:last-child]:font-medium lg:[&>span:last-child]:text-sm"
             />
           ))}
         </ul>
