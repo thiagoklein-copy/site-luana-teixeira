@@ -25,17 +25,11 @@ npm run build
 npm start
 ```
 
-## Trocar fotos
+## Fotos
 
-Substitua os placeholders em `public/images/`:
+Nenhuma foto da Ana Paula permanece no projeto. Hero/About usam slot “Foto em breve”; Approach usa fundo solid.
 
-| Arquivo | Uso |
-|---------|-----|
-| `luana-teixeira.png` | Hero + About (retrato) |
-| `approach-placeholder.jpg` | Seção Minha visão (interior/natureza) |
-| `og-placeholder.jpg` | Open Graph (1200×630) |
-
-Há comentários `TODO` nos componentes `Hero`, `About` e `Approach` marcando os pontos de troca.
+Quando a Luana enviar as fotos, colocar em `public/images/` e religar nos componentes (`Hero`, `About`, `Approach` + OG no `layout.tsx`).
 
 ## Contato / WhatsApp
 

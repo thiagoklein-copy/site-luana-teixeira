@@ -9,7 +9,7 @@ const jsonLd = {
     "Psicologia clínica com abordagem psicanalítica — acolhimento e escuta ética para adolescentes, adultos e idosos, em São Leopoldo e online.",
   url: BUSINESS.siteUrl,
   telephone: `+${BUSINESS.phoneE164}`,
-  image: `${BUSINESS.siteUrl}/images/luana-teixeira.png`,
+  // TODO: adicionar image quando houver foto real da Luana
   address: {
     "@type": "PostalAddress",
     streetAddress: `${BUSINESS.address.street} - ${BUSINESS.address.neighborhood}`,
@@ -44,7 +44,7 @@ const jsonLd = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-primary/10 bg-beige/50">
+    <footer className="border-t border-primary/25 bg-beige">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -131,7 +131,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-primary/10 py-5 text-center">
+      <div className="border-t border-primary/25 py-5 text-center">
         <p className="text-xs text-ink-muted">
           © 2026 Luana Teixeira Psicologia · {BUSINESS.crp}
         </p>

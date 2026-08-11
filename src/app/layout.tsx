@@ -46,22 +46,13 @@ export const metadata: Metadata = {
     title: "Psicóloga em São Leopoldo | Luana Teixeira",
     description:
       "Um espaço de escuta psicanalítica para adolescentes, adultos e idosos. Presencial em São Leopoldo e online.",
-    images: [
-      {
-        // TODO: substituir por foto OG real quando disponível
-        url: "/images/og-placeholder.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Luana Teixeira — Psicóloga Clínica",
-      },
-    ],
+    // TODO: adicionar images quando houver foto OG real da Luana
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Psicóloga em São Leopoldo | Luana Teixeira",
     description:
       "Psicoterapia psicanalítica em São Leopoldo e online. CRP 07/34651.",
-    images: ["/images/og-placeholder.jpg"],
   },
   robots: {
     index: true,

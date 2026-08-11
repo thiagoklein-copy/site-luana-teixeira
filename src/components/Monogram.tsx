@@ -15,7 +15,7 @@ export default function Monogram({ className = "", size = "sm" }: MonogramProps)
 
   return (
     <span
-      className={`inline-flex ${dim} items-center justify-center rounded-full border border-primary/50 font-display font-medium tracking-[0.12em] text-primary ${className}`}
+      className={`inline-flex ${dim} items-center justify-center rounded-full border border-primary-dark/55 bg-beige font-display font-medium tracking-[0.12em] text-primary-dark ${className}`}
       aria-hidden="true"
       title="Monograma provisório — confirmar com Luana"
     >

@@ -8,7 +8,7 @@ export default function CheckItem({ label, className = "" }: CheckItemProps) {
   return (
     <li className={`flex items-start gap-2.5 ${className}`}>
       <span
-        className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary"
+        className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/25 text-primary-dark"
         aria-hidden="true"
       >
         <svg
@@ -27,7 +27,7 @@ export default function CheckItem({ label, className = "" }: CheckItemProps) {
           />
         </svg>
       </span>
-      <span className="text-sm leading-relaxed text-ink-muted sm:text-[0.95rem]">
+      <span className="text-sm leading-relaxed text-ink sm:text-[0.95rem]">
         {label}
       </span>
     </li>

@@ -1,9 +1,11 @@
 # Imagens do site — Luana Teixeira
 
-Substituir pelos arquivos finais da Luana:
+Nenhuma foto da Ana Paula deve ficar aqui. Quando a Luana enviar as fotos finais:
 
-- `luana-teixeira.png` — retrato editorial (Hero + About)
-- `approach-placeholder.jpg` — interior/natureza com luz suave (seção Minha visão)
-- `og-placeholder.jpg` — Open Graph 1200×630
+| Arquivo | Uso |
+|---------|-----|
+| `luana-teixeira.jpg` | Hero + About (retrato editorial) |
+| `approach.jpg` | Seção Minha visão (interior/natureza, luz suave) |
+| `og.jpg` | Open Graph 1200×630 |
 
-Fotos atuais são placeholders temporários (não usar em produção).
+Enquanto isso, Hero/About usam slot “Foto em breve” e Approach usa fundo caramel sólido.

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FadeIn from "./FadeIn";
 import QuoteFrame from "./QuoteFrame";
 
@@ -7,17 +6,13 @@ export default function Approach() {
     <section
       id="visao"
       aria-labelledby="approach-heading"
-      className="relative overflow-hidden py-24 sm:py-32"
+      className="relative overflow-hidden bg-primary-dark py-24 sm:py-32"
     >
-      {/* TODO: trocar por foto de interior/natureza com luz suave (identidade editorial) */}
-      <Image
-        src="/images/approach-placeholder.jpg"
-        alt="Ambiente sereno — metáfora de espaços internos e pertencimento"
-        fill
-        className="object-cover"
-        sizes="100vw"
+      {/* TODO: trocar fundo sólido por foto de interior/natureza com luz suave */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(242,237,226,0.12)_0%,_transparent_65%)]"
+        aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-primary-dark/60" />
 
       <div className="relative mx-auto max-w-3xl px-5 text-center lg:px-8">
         <FadeIn>

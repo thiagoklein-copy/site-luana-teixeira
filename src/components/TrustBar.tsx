@@ -11,7 +11,7 @@ export default function TrustBar() {
   return (
     <section
       aria-label="Credenciais"
-      className="border-b border-primary/10 bg-beige/60"
+      className="border-b border-primary/25 bg-beige"
     >
       <FadeIn className="mx-auto max-w-6xl px-5 py-8 lg:px-8">
         <ul className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-x-10 sm:gap-y-3">

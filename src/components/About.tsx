@@ -1,7 +1,7 @@
-import Image from "next/image";
 import CheckItem from "./CheckItem";
 import FadeIn from "./FadeIn";
 import QuoteFrame from "./QuoteFrame";
+import Monogram from "./Monogram";
 
 const VALUES = [
   "Acolhimento",
@@ -18,20 +18,19 @@ export default function About() {
     <section id="sobre" aria-labelledby="about-heading" className="bg-cream py-20 sm:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <FadeIn className="relative">
-          <div className="relative aspect-[4/5] overflow-hidden">
-            {/* TODO: substituir por retrato editorial real da Luana */}
-            <Image
-              src="/images/luana-teixeira.png"
-              alt="Retrato de Luana Teixeira"
-              fill
-              className="object-cover object-[center_15%]"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          <div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden border border-primary/30 bg-beige">
+            {/* TODO: inserir retrato editorial real da Luana em /images/luana-teixeira.jpg */}
+            <div className="flex flex-col items-center gap-4 px-6 text-center">
+              <Monogram size="md" />
+              <p className="font-display text-sm tracking-[0.14em] text-primary-dark">
+                Foto em breve
+              </p>
+            </div>
           </div>
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <p className="font-display text-base tracking-[0.12em] text-primary">
+          <p className="font-display text-base tracking-[0.12em] text-primary-dark">
             Quem sou eu
           </p>
           <h2

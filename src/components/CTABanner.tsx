@@ -14,7 +14,7 @@ export default function CTABanner() {
         >
           Vamos conversar?
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-cream/85 sm:text-lg">
+        <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-cream sm:text-lg">
           Se algo em você pediu um espaço de escuta, esse pode ser o momento. Me
           chama no WhatsApp — vamos com calma, sem pressão.
         </p>

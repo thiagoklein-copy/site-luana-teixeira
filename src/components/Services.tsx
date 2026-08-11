@@ -40,11 +40,11 @@ export default function Services() {
     <section
       id="atendimento"
       aria-labelledby="services-heading"
-      className="bg-beige/50 py-20 sm:py-28"
+      className="bg-beige py-20 sm:py-28"
     >
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <FadeIn className="mx-auto max-w-2xl text-center">
-          <p className="font-display text-base tracking-[0.12em] text-primary">
+          <p className="font-display text-base tracking-[0.12em] text-primary-dark">
             Como posso te ajudar
           </p>
           <h2
@@ -62,7 +62,7 @@ export default function Services() {
         <ul className="mt-14 grid gap-6 md:grid-cols-3">
           {SERVICES.map((service, i) => (
             <FadeIn key={service.title} delay={i * 0.08} as="li">
-              <article className="flex h-full flex-col border border-primary/10 bg-cream p-7 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift">
+              <article className="flex h-full flex-col border border-primary/30 bg-cream p-7 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift">
                 <h3 className="font-display text-xl font-medium leading-snug tracking-wide text-ink">
                   {service.title}
                 </h3>

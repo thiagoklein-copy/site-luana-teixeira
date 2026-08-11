@@ -38,7 +38,7 @@ export default function Contact() {
     >
       <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <FadeIn>
-          <p className="font-display text-base tracking-[0.12em] text-primary">
+          <p className="font-display text-base tracking-[0.12em] text-primary-dark">
             Vamos conversar
           </p>
           <h2
@@ -88,7 +88,7 @@ export default function Contact() {
         <FadeIn delay={0.1}>
           <form
             onSubmit={handleSubmit}
-            className="border border-primary/10 bg-beige/40 p-6 shadow-soft sm:p-8"
+            className="border border-primary/30 bg-beige p-6 shadow-soft sm:p-8"
           >
             <div className="space-y-5">
               <div>
@@ -103,7 +103,7 @@ export default function Contact() {
                   value={nome}
                   onChange={(e) => setNome(e.target.value)}
                   placeholder="Como posso te chamar?"
-                  className="w-full border border-primary/15 bg-cream px-4 py-3 text-sm text-ink placeholder:text-ink-muted/60 outline-none transition-shadow focus:border-primary focus:shadow-soft"
+                  className="w-full border border-primary/30 bg-cream px-4 py-3 text-sm text-ink placeholder:text-ink-muted/70 outline-none transition-shadow focus:border-primary-dark focus:shadow-soft"
                 />
               </div>
 
@@ -122,7 +122,7 @@ export default function Contact() {
                   value={telefone}
                   onChange={(e) => setTelefone(e.target.value)}
                   placeholder="(51) 99999-9999"
-                  className="w-full border border-primary/15 bg-cream px-4 py-3 text-sm text-ink placeholder:text-ink-muted/60 outline-none transition-shadow focus:border-primary focus:shadow-soft"
+                  className="w-full border border-primary/30 bg-cream px-4 py-3 text-sm text-ink placeholder:text-ink-muted/70 outline-none transition-shadow focus:border-primary-dark focus:shadow-soft"
                 />
               </div>
 
@@ -138,7 +138,7 @@ export default function Contact() {
                   name="objetivo"
                   value={objetivo}
                   onChange={(e) => setObjetivo(e.target.value as typeof OBJECTIVES[number])}
-                  className="w-full border border-primary/15 bg-cream px-4 py-3 text-sm text-ink outline-none transition-shadow focus:border-primary focus:shadow-soft"
+                  className="w-full border border-primary/30 bg-cream px-4 py-3 text-sm text-ink outline-none transition-shadow focus:border-primary-dark focus:shadow-soft"
                 >
                   {OBJECTIVES.map((opt) => (
                     <option key={opt} value={opt}>

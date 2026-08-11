@@ -26,7 +26,7 @@ const TESTIMONIALS = [
 
 function Stars() {
   return (
-    <div className="flex gap-0.5 text-primary" aria-label="5 estrelas">
+    <div className="flex gap-0.5 text-primary-dark" aria-label="5 estrelas">
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
@@ -48,11 +48,11 @@ export default function Testimonials() {
     <section
       id="depoimentos"
       aria-labelledby="testimonials-heading"
-      className="bg-beige/40 py-20 sm:py-28"
+      className="bg-beige py-20 sm:py-28"
     >
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <FadeIn className="mx-auto max-w-2xl text-center">
-          <p className="font-display text-base tracking-[0.12em] text-primary">
+          <p className="font-display text-base tracking-[0.12em] text-primary-dark">
             Depoimentos
           </p>
           <h2
@@ -71,14 +71,14 @@ export default function Testimonials() {
               as="li"
               className="min-w-[85%] snap-center sm:min-w-[70%] md:min-w-0"
             >
-              <article className="flex h-full flex-col border border-primary/10 bg-cream p-6 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift sm:p-7">
+              <article className="flex h-full flex-col border border-primary/30 bg-cream p-6 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift sm:p-7">
                 <Stars />
-                <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-ink-muted sm:text-[0.95rem]">
+                <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-ink sm:text-[0.95rem]">
                   &ldquo;{item.quote}&rdquo;
                 </blockquote>
                 <footer className="mt-6 flex items-center gap-3">
                   <span
-                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary/15 font-display text-sm font-medium text-primary-dark"
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary/25 font-display text-sm font-medium text-primary-dark"
                     aria-hidden="true"
                   >
                     {item.initials}

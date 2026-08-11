@@ -46,7 +46,7 @@ export default function HowItWorks() {
     >
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <FadeIn className="mx-auto max-w-2xl text-center">
-          <p className="font-display text-base tracking-[0.12em] text-primary">
+          <p className="font-display text-base tracking-[0.12em] text-primary-dark">
             Como funciona
           </p>
           <h2
@@ -61,7 +61,7 @@ export default function HowItWorks() {
           {STEPS.map((step, i) => (
             <FadeIn key={step.number} delay={i * 0.1} as="li">
               <article>
-                <p className="font-display text-4xl font-medium text-primary/30 sm:text-5xl">
+                <p className="font-display text-4xl font-medium text-primary sm:text-5xl">
                   {step.number}
                 </p>
                 <h3 className="mt-3 font-display text-xl font-medium tracking-wide text-ink">

@@ -27,7 +27,7 @@ export default function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-primary/10 bg-cream/95 shadow-soft backdrop-blur-md"
+          ? "border-b border-primary/25 bg-cream/95 shadow-soft backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
@@ -92,7 +92,7 @@ export default function Header() {
       {open && (
         <div
           id="mobile-nav"
-          className="border-t border-primary/10 bg-cream px-5 py-6 lg:hidden"
+          className="border-t border-primary/25 bg-cream px-5 py-6 lg:hidden"
         >
           <nav className="flex flex-col gap-4" aria-label="Mobile">
             {NAV_LINKS.map((link) => (

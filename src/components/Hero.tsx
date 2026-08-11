@@ -1,7 +1,6 @@
-import Image from "next/image";
-import QuoteFrame from "./QuoteFrame";
 import WhatsAppButton from "./WhatsAppButton";
 import FadeIn from "./FadeIn";
+import Monogram from "./Monogram";
 
 const DIFFERENTIATORS = [
   {
@@ -58,20 +57,13 @@ export default function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:py-16">
         {/* Text — left */}
         <FadeIn className="order-2 lg:order-1">
-          <p className="mb-4 font-display text-base tracking-[0.12em] text-primary sm:text-lg">
+          <p className="mb-4 font-display text-base tracking-[0.12em] text-primary-dark sm:text-lg">
             Psicóloga Clínica · Percurso em Psicanálise
           </p>
 
           <h1 className="font-display text-4xl font-normal leading-[1.2] tracking-wide text-ink sm:text-5xl lg:text-[3.15rem]">
             Abra a porta e pertença a cada espaço dentro de ti
           </h1>
-
-          <div className="mt-8 max-w-md">
-            <QuoteFrame className="!px-6 !py-8 sm:!px-8 sm:!py-10">
-              Sou psicóloga e acredito no poder da escuta e do acolhimento para
-              trazer mais leveza para a vida das pessoas.
-            </QuoteFrame>
-          </div>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
             Psicoterapia com abordagem psicanalítica para adolescentes, adultos
@@ -90,22 +82,20 @@ export default function Hero() {
           </div>
         </FadeIn>
 
-        {/* Image — right */}
+        {/* Photo slot — right (sem foto até receber retrato da Luana) */}
         <FadeIn delay={0.1} className="relative order-1 lg:order-2">
-          <div className="relative aspect-[4/5] overflow-hidden sm:aspect-[3/4] lg:aspect-[4/5]">
-            {/* TODO: substituir por retrato editorial real da Luana */}
-            <Image
-              src="/images/luana-teixeira.png"
-              alt="Luana Teixeira, psicóloga clínica em São Leopoldo"
-              fill
-              priority
-              className="object-cover object-[center_15%]"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          <div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden border border-primary/30 bg-beige sm:aspect-[3/4] lg:aspect-[4/5]">
+            {/* TODO: inserir retrato editorial real da Luana em /images/luana-teixeira.jpg */}
+            <div className="flex flex-col items-center gap-4 px-6 text-center">
+              <Monogram size="md" />
+              <p className="font-display text-sm tracking-[0.14em] text-primary-dark">
+                Foto em breve
+              </p>
+            </div>
           </div>
 
           {/* Floating credential card */}
-          <aside className="absolute -bottom-4 left-4 right-4 rounded-2xl border border-white/40 bg-cream/90 p-4 shadow-glass backdrop-blur-md sm:left-auto sm:right-4 sm:max-w-[260px]">
+          <aside className="absolute -bottom-4 left-4 right-4 rounded-2xl border border-primary/35 bg-beige p-4 shadow-glass sm:left-auto sm:right-4 sm:max-w-[260px]">
             <p className="font-display text-lg font-medium leading-snug tracking-wide text-primary-dark">
               Atendimento presencial em São Leopoldo e online
             </p>
@@ -114,12 +104,12 @@ export default function Hero() {
       </div>
 
       {/* Icon-label trio row (Atvisor pattern) */}
-      <div className="mt-8 border-y border-primary/10 bg-beige/40 sm:mt-12">
+      <div className="mt-8 border-y border-primary/25 bg-beige sm:mt-12">
         <ul className="mx-auto grid max-w-6xl gap-6 px-5 py-10 sm:grid-cols-3 lg:px-8 lg:py-12">
           {DIFFERENTIATORS.map((item, i) => (
             <FadeIn key={item.title} delay={i * 0.08} as="li">
               <div className="flex items-start gap-3">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-beige text-primary">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-primary/30 bg-cream text-primary-dark">
                   {item.icon}
                 </span>
                 <div>
