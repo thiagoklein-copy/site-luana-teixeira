@@ -1,17 +1,16 @@
 import Image from "next/image";
 import CheckItem from "./CheckItem";
 import FadeIn from "./FadeIn";
-import HighlightBox from "./HighlightBox";
+import QuoteFrame from "./QuoteFrame";
 
 const VALUES = [
   "Acolhimento",
   "Escuta",
-  "Responsabilidade",
+  "Ética",
   "Respeito",
   "Cuidado",
-  "Resiliência",
-  "Empatia",
-  "Sensibilidade",
+  "Singularidade",
+  "Presença",
 ] as const;
 
 export default function About() {
@@ -20,49 +19,53 @@ export default function About() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <FadeIn className="relative">
           <div className="relative aspect-[4/5] overflow-hidden">
+            {/* TODO: substituir por retrato editorial real da Luana */}
             <Image
-              src="/images/ana-paula.png"
-              alt="Retrato de Ana Paula Sobierai"
+              src="/images/luana-teixeira.png"
+              alt="Retrato de Luana Teixeira"
               fill
               className="object-cover object-[center_15%]"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
-          <div className="absolute -bottom-5 -right-2 max-w-[85%] sm:-right-4 sm:max-w-xs">
-            <HighlightBox
-              rotate={1.5}
-              className="block px-4 py-3 font-script text-base italic leading-snug sm:text-lg"
-            >
-              Minha função é facilitar seu processo de autoconhecimento — sem
-              roteiro fixo, no seu ritmo.
-            </HighlightBox>
-          </div>
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <p className="font-script text-lg italic text-primary">Quem sou eu</p>
+          <p className="font-display text-base tracking-[0.12em] text-primary">
+            Quem sou eu
+          </p>
           <h2
             id="about-heading"
-            className="mt-2 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl"
+            className="mt-2 font-display text-3xl font-normal tracking-wide text-ink sm:text-4xl"
           >
-            Olá, eu sou a{" "}
-            <em className="font-script font-normal italic text-primary">Ana</em>
+            Olá, eu sou a Luana
           </h2>
 
           <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-muted sm:text-[1.05rem]">
             <p>
-              Sou psicóloga formada pela IENH, com ênfase em Clínica Ampliada, e
-              atualmente mestranda em Psicologia pela Universidade Feevale.
-              Atendo crianças, adolescentes, adultos e idosos, sempre orientada
-              pela escuta psicanalítica.
+              Sou psicóloga, graduada pela Universidade do Vale do Rio dos Sinos
+              (UNISINOS), com pós-graduação em Psicologia Hospitalar pelo
+              Hospital Moinhos de Vento, em Porto Alegre.
             </p>
             <p>
-              Ao longo da minha formação, tive a oportunidade de atuar tanto na
-              rede pública quanto na prática clínica, o que me deu uma visão
-              sensível sobre as diferentes fases da vida e suas dores. Acredito
-              profundamente no poder da escuta — e na possibilidade de, a partir
-              dela, ressignificar e reescrever histórias.
+              Atuo na clínica particular com adolescentes, adultos e idosos,
+              oferecendo um espaço de escuta ética e acolhedora, orientado pela
+              psicanálise. Mantenho formação contínua por meio de grupos de
+              estudos e aprofundamento teórico nessa abordagem.
             </p>
+            <p>
+              Acompanho demandas relacionadas à ansiedade, relações
+              interpessoais, maternidade, luto, autoestima e momentos de
+              transição de vida, buscando, junto ao paciente, a construção de
+              novos sentidos.
+            </p>
+          </div>
+
+          <div className="mt-8">
+            <QuoteFrame>
+              Gosto de lembrar que sempre há tempo para se encontrar e se
+              pertencer no que se é por inteiro.
+            </QuoteFrame>
           </div>
 
           <ul className="mt-8 flex flex-wrap gap-x-5 gap-y-3">

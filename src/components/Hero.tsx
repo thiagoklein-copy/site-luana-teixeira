@@ -1,12 +1,12 @@
 import Image from "next/image";
-import HighlightBox from "./HighlightBox";
+import QuoteFrame from "./QuoteFrame";
 import WhatsAppButton from "./WhatsAppButton";
 import FadeIn from "./FadeIn";
 
 const DIFFERENTIATORS = [
   {
     title: "Escuta Psicanalítica",
-    description: "Acolhimento sem julgamento",
+    description: "Acolhimento ético e sem julgamento",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path
@@ -19,8 +19,8 @@ const DIFFERENTIATORS = [
     ),
   },
   {
-    title: "Todas as idades",
-    description: "Crianças, adolescentes, adultos e idosos",
+    title: "Adolescentes, adultos e idosos",
+    description: "Um espaço para cada fase da vida",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <circle cx="9" cy="8" r="2.5" stroke="currentColor" strokeWidth="1.5" />
@@ -42,7 +42,7 @@ const DIFFERENTIATORS = [
   },
   {
     title: "Presencial e Online",
-    description: "Novo Hamburgo e todo o Brasil",
+    description: "São Leopoldo e todo o Brasil",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <circle cx="12" cy="12" r="8.5" stroke="currentColor" strokeWidth="1.5" />
@@ -58,32 +58,25 @@ export default function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:py-16">
         {/* Text — left */}
         <FadeIn className="order-2 lg:order-1">
-          <p className="mb-4 font-script text-lg italic text-primary sm:text-xl">
-            Psicóloga Clínica · Mestranda em Psicologia
+          <p className="mb-4 font-display text-base tracking-[0.12em] text-primary sm:text-lg">
+            Psicóloga Clínica · Percurso em Psicanálise
           </p>
 
-          <h1 className="font-display text-4xl font-bold leading-[1.15] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]">
-            Um espaço para você se{" "}
-            <em className="font-script text-[1.08em] font-normal italic text-primary">
-              escutar
-            </em>{" "}
-            com mais verdade
+          <h1 className="font-display text-4xl font-normal leading-[1.2] tracking-wide text-ink sm:text-5xl lg:text-[3.15rem]">
+            Abra a porta e pertença a cada espaço dentro de ti
           </h1>
 
-          <div className="mt-6 max-w-md">
-            <HighlightBox
-              rotate={-1.8}
-              className="block border border-primary/10 text-sm leading-relaxed sm:text-[0.95rem]"
-            >
-              Saber tudo antecipadamente parece confortável, mas roubaria a
-              surpresa da vida.
-            </HighlightBox>
+          <div className="mt-8 max-w-md">
+            <QuoteFrame className="!px-6 !py-8 sm:!px-8 sm:!py-10">
+              Sou psicóloga e acredito no poder da escuta e do acolhimento para
+              trazer mais leveza para a vida das pessoas.
+            </QuoteFrame>
           </div>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
-            Psicoterapia psicanalítica para crianças, adolescentes, adultos e
-            idosos, em Novo Hamburgo e online. Um lugar para acolher o que dói
-            sem nome.
+            Psicoterapia com abordagem psicanalítica para adolescentes, adultos
+            e idosos, em São Leopoldo e online. Um espaço ético e acolhedor para
+            você se reconhecer por inteiro.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -100,9 +93,10 @@ export default function Hero() {
         {/* Image — right */}
         <FadeIn delay={0.1} className="relative order-1 lg:order-2">
           <div className="relative aspect-[4/5] overflow-hidden sm:aspect-[3/4] lg:aspect-[4/5]">
+            {/* TODO: substituir por retrato editorial real da Luana */}
             <Image
-              src="/images/ana-paula.png"
-              alt="Ana Paula Sobierai, psicóloga clínica em Novo Hamburgo"
+              src="/images/luana-teixeira.png"
+              alt="Luana Teixeira, psicóloga clínica em São Leopoldo"
               fill
               priority
               className="object-cover object-[center_15%]"
@@ -110,14 +104,10 @@ export default function Hero() {
             />
           </div>
 
-          {/* Floating glassmorphic credential card */}
-          <aside className="absolute -bottom-4 left-4 right-4 rounded-2xl border border-white/40 bg-cream/90 p-4 shadow-glass backdrop-blur-md sm:left-auto sm:right-4 sm:max-w-[240px]">
-            <p className="font-display text-2xl font-bold text-primary-dark">894+</p>
-            <p className="mt-1 text-sm leading-snug text-ink-muted">
-              pessoas acompanham no Instagram
-            </p>
-            <p className="mt-1 text-xs tracking-wide text-ink-muted/80">
-              @psi.anapaulasobierai
+          {/* Floating credential card */}
+          <aside className="absolute -bottom-4 left-4 right-4 rounded-2xl border border-white/40 bg-cream/90 p-4 shadow-glass backdrop-blur-md sm:left-auto sm:right-4 sm:max-w-[260px]">
+            <p className="font-display text-lg font-medium leading-snug tracking-wide text-primary-dark">
+              Atendimento presencial em São Leopoldo e online
             </p>
           </aside>
         </FadeIn>
@@ -133,7 +123,7 @@ export default function Hero() {
                   {item.icon}
                 </span>
                 <div>
-                  <p className="font-display text-base font-semibold text-ink">
+                  <p className="font-display text-base font-medium tracking-wide text-ink">
                     {item.title}
                   </p>
                   <p className="mt-0.5 text-sm text-ink-muted">{item.description}</p>

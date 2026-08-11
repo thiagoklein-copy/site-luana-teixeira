@@ -1,6 +1,6 @@
 import Image from "next/image";
 import FadeIn from "./FadeIn";
-import HighlightBox from "./HighlightBox";
+import QuoteFrame from "./QuoteFrame";
 
 export default function Approach() {
   return (
@@ -9,44 +9,38 @@ export default function Approach() {
       aria-labelledby="approach-heading"
       className="relative overflow-hidden py-24 sm:py-32"
     >
-      {/* TODO: Swap with nature/greenery photo matching her carousel aesthetic */}
+      {/* TODO: trocar por foto de interior/natureza com luz suave (identidade editorial) */}
       <Image
         src="/images/approach-placeholder.jpg"
-        alt="Folhagem e natureza — metáfora de processo e crescimento"
+        alt="Ambiente sereno — metáfora de espaços internos e pertencimento"
         fill
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-primary-dark/55" />
+      <div className="absolute inset-0 bg-primary-dark/60" />
 
       <div className="relative mx-auto max-w-3xl px-5 text-center lg:px-8">
         <FadeIn>
-          <p className="font-script text-lg italic text-beige/90">Minha visão</p>
+          <p className="font-display text-base tracking-[0.12em] text-beige/90">
+            Minha visão
+          </p>
           <h2
             id="approach-heading"
-            className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight text-cream sm:text-4xl lg:text-5xl"
+            className="mt-3 font-display text-3xl font-normal leading-tight tracking-wide text-cream sm:text-4xl lg:text-5xl"
           >
-            Você não precisa ter o{" "}
-            <em className="font-script font-normal italic text-beige">
-              controle
-            </em>{" "}
-            sobre tudo
+            Pertença a cada espaço dentro de ti
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-cream/90 sm:text-lg">
-            Há um ano atrás, você provavelmente também não imaginava muita coisa
-            que vive hoje. Saber tudo antecipadamente parece confortável, mas
-            também roubaria a surpresa da vida — as pessoas que você ainda vai
-            conhecer, as versões suas que ainda vão nascer, os lugares onde você
-            ainda vai se reencontrar.
+            Esse espaço é para ser um respiro para o teu dia a dia. Um convite
+            para abrir as portas internas e ver os caminhos que há na imensidão
+            do teu mundo interior — respeitando o teu tempo e a tua
+            singularidade.
           </p>
           <div className="mt-10 flex justify-center">
-            <HighlightBox
-              rotate={-1.2}
-              className="max-w-md px-4 py-3 text-sm leading-relaxed sm:text-base"
-            >
-              Saber tudo antecipadamente parece confortável, mas também roubaria
-              a surpresa da vida.
-            </HighlightBox>
+            <QuoteFrame className="max-w-lg">
+              Acredito na importância de cada pessoa poder se reconhecer e se
+              apropriar dos seus próprios espaços internos.
+            </QuoteFrame>
           </div>
         </FadeIn>
       </div>

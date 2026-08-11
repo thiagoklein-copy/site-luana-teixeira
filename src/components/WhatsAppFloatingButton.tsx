@@ -7,7 +7,7 @@ export default function WhatsAppFloatingButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"
-      className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full border-2 border-primary bg-accent text-cream shadow-lift transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#a35532] hover:shadow-glass focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:bottom-6 sm:right-6"
+      className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-white shadow-lift transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#1ebe57] hover:shadow-glass focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-whatsapp sm:bottom-6 sm:right-6"
     >
       <svg
         width="28"

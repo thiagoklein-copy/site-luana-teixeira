@@ -2,8 +2,8 @@ import CheckItem from "./CheckItem";
 import FadeIn from "./FadeIn";
 
 const CREDENTIALS = [
-  "Formada em Psicologia pela IENH",
-  "Mestranda em Psicologia pela Feevale",
+  "Graduada em Psicologia pela UNISINOS",
+  "Pós-graduada em Psicologia Hospitalar · Hospital Moinhos de Vento (POA)",
   "Abordagem Psicanalítica",
 ] as const;
 

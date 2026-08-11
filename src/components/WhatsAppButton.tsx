@@ -20,7 +20,7 @@ export default function WhatsAppButton({
 
   const variants = {
     primary:
-      "bg-accent text-cream shadow-soft hover:shadow-lift hover:bg-[#a35532] focus-visible:outline-accent",
+      "bg-whatsapp text-white shadow-soft hover:shadow-lift hover:bg-[#1ebe57] focus-visible:outline-whatsapp",
     secondary:
       "border border-primary/30 bg-transparent text-primary hover:bg-primary/5 focus-visible:outline-primary",
     dark: "bg-cream text-primary-dark shadow-soft hover:shadow-lift hover:bg-beige focus-visible:outline-cream",

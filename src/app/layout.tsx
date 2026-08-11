@@ -1,26 +1,15 @@
 import type { Metadata } from "next";
-import {
-  Playfair_Display,
-  Cormorant_Garamond,
-  Work_Sans,
-} from "next/font/google";
+import { Cormorant_Garamond, Work_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import { BUSINESS } from "@/lib/constants";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  display: "swap",
-});
-
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
+  style: ["normal"],
   display: "swap",
 });
 
@@ -31,46 +20,47 @@ const workSans = Work_Sans({
   display: "swap",
 });
 
-const siteUrl = "https://www.anapaulasobierai.com.br";
+const siteUrl = BUSINESS.siteUrl;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Psicóloga em Novo Hamburgo | Ana Paula Sobierai · CRP 07/44922",
-    template: "%s | Ana Paula Sobierai",
+    default: "Psicóloga em São Leopoldo | Luana Teixeira · CRP 07/34651",
+    template: "%s | Luana Teixeira",
   },
   description:
-    "Psicóloga clínica em Novo Hamburgo com abordagem psicanalítica. Atendimento presencial e online para crianças, adolescentes, adultos e idosos. CRP 07/44922.",
+    "Psicóloga clínica em São Leopoldo com percurso em Psicanálise. Atendimento presencial e online para adolescentes, adultos e idosos. CRP 07/34651.",
   keywords: [
-    "psicóloga Novo Hamburgo",
+    "psicóloga São Leopoldo",
     "psicoterapia psicanalítica",
-    "psicóloga clínica Novo Hamburgo",
+    "psicóloga clínica São Leopoldo",
     "terapia online RS",
-    "Ana Paula Sobierai",
+    "Luana Teixeira psicóloga",
   ],
   authors: [{ name: BUSINESS.name }],
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: siteUrl,
-    siteName: "Ana Paula Sobierai Psicologia",
-    title: "Psicóloga em Novo Hamburgo | Ana Paula Sobierai",
+    siteName: "Luana Teixeira Psicologia",
+    title: "Psicóloga em São Leopoldo | Luana Teixeira",
     description:
-      "Um espaço de escuta psicanalítica para crianças, adolescentes, adultos e idosos. Presencial em Novo Hamburgo e online.",
+      "Um espaço de escuta psicanalítica para adolescentes, adultos e idosos. Presencial em São Leopoldo e online.",
     images: [
       {
+        // TODO: substituir por foto OG real quando disponível
         url: "/images/og-placeholder.jpg",
         width: 1200,
         height: 630,
-        alt: "Ana Paula Sobierai — Psicóloga Clínica",
+        alt: "Luana Teixeira — Psicóloga Clínica",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Psicóloga em Novo Hamburgo | Ana Paula Sobierai",
+    title: "Psicóloga em São Leopoldo | Luana Teixeira",
     description:
-      "Psicoterapia psicanalítica em Novo Hamburgo e online. CRP 07/44922.",
+      "Psicoterapia psicanalítica em São Leopoldo e online. CRP 07/34651.",
     images: ["/images/og-placeholder.jpg"],
   },
   robots: {
@@ -90,7 +80,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${playfair.variable} ${cormorant.variable} ${workSans.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${workSans.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-cream font-sans text-ink">
         <Header />

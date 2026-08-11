@@ -1,6 +1,6 @@
-# Ana Paula Sobierai — Site Institucional
+# Luana Teixeira — Site Institucional
 
-Site premium de conversão para Ana Paula Sobierai da Cruz, psicóloga clínica (abordagem psicanalítica) em Novo Hamburgo/RS.
+Site premium de conversão para Luana Teixeira, psicóloga clínica (percurso em Psicanálise) em São Leopoldo/RS.
 
 ## Stack
 
@@ -16,7 +16,7 @@ npm install
 npm run dev
 ```
 
-Abra [http://localhost:3000](http://localhost:3000).
+Abra http://localhost:3000.
 
 ## Build
 
@@ -25,24 +25,25 @@ npm run build
 npm start
 ```
 
-## Trocar fotos (Instagram)
+## Trocar fotos
 
 Substitua os placeholders em `public/images/`:
 
 | Arquivo | Uso |
-|---|---|
-| `hero-placeholder.jpg` | Hero full-bleed |
-| `about-placeholder.jpg` | Seção Sobre |
-| `approach-placeholder.jpg` | Seção Minha visão (natureza) |
+|---------|-----|
+| `luana-teixeira.png` | Hero + About (retrato) |
+| `approach-placeholder.jpg` | Seção Minha visão (interior/natureza) |
 | `og-placeholder.jpg` | Open Graph (1200×630) |
 
 Há comentários `TODO` nos componentes `Hero`, `About` e `Approach` marcando os pontos de troca.
 
 ## Contato / WhatsApp
 
-Número: `(51) 99738-9430` → `wa.me/5551997389430`  
-Mensagem padrão: *"Olá, Ana! Vi seu site e gostaria de agendar uma conversa."*
+Número: `(51) 99893-4691` → `wa.me/5551998934691`  
+Mensagem padrão: *"Olá, Luana! Vi seu site e gostaria de agendar uma conversa."*
 
 ## Nota
 
 **Sem preços** em nenhuma seção — requisito explícito do projeto.
+
+**Monograma:** placeholder `LT` — confirmar com Luana antes do lançamento.

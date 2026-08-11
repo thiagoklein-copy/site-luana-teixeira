@@ -1,27 +1,32 @@
 export const BUSINESS = {
-  name: "Ana Paula Sobierai da Cruz",
-  shortName: "Ana Paula Sobierai",
-  title: "Psicóloga Clínica · CRP 07/44922 · Mestranda em Psicologia (Feevale)",
-  tag: "Psicóloga Clínica · CRP 07/44922",
-  crp: "CRP 07/44922",
-  phoneDisplay: "(51) 99738-9430",
-  phoneE164: "5551997389430",
-  email: "psicologaanapaulasobierai@gmail.com",
-  instagramHandle: "@psi.anapaulasobierai",
-  instagramUrl: "https://www.instagram.com/psi.anapaulasobierai",
+  name: "Luana Teixeira",
+  shortName: "Luana Teixeira",
+  title:
+    "Psicóloga Clínica · Especialista em Psicologia Hospitalar · CRP 07/34651",
+  tag: "Psicóloga Clínica · CRP 07/34651",
+  crp: "CRP 07/34651",
+  phoneDisplay: "(51) 99893-4691",
+  phoneE164: "5551998934691",
+  /** FLAG: confirmar monograma com Luana antes do lançamento — placeholder "LT" (referência IG mostrava "LF") */
+  monogram: "LT",
+  instagramHandle: "@psico.luanateixeira",
+  instagramUrl: "https://www.instagram.com/psico.luanateixeira",
+  linkedinUrl: "https://www.linkedin.com/in/luana-teixeira-9769a980",
   address: {
-    street: "Av. Cel. Frederico Linck, 1170",
-    neighborhood: "Ideal",
-    city: "Novo Hamburgo",
+    street: "Av. João Corrêa, 1000",
+    neighborhood: "Centro",
+    city: "São Leopoldo",
     state: "RS",
-    postalCode: "93336-002",
-    full: "Av. Cel. Frederico Linck, 1170 - Ideal, Novo Hamburgo - RS, 93336-002",
-    short: "Av. Cel. Frederico Linck, 1170 - Ideal, Novo Hamburgo - RS",
+    postalCode: "93020-668",
+    complement: "Condomínio do Edifício Comercial Astolfi",
+    full: "Av. João Corrêa, 1000 - Centro, São Leopoldo - RS, 93020-668",
+    short: "Av. João Corrêa, 1000 - Centro, São Leopoldo - RS",
   },
+  siteUrl: "https://www.luanateixeira.psi.br",
 } as const;
 
 export const WHATSAPP_DEFAULT_MESSAGE =
-  "Olá, Ana! Vi seu site e gostaria de agendar uma conversa.";
+  "Olá, Luana! Vi seu site e gostaria de agendar uma conversa.";
 
 export function whatsappUrl(message: string = WHATSAPP_DEFAULT_MESSAGE): string {
   return `https://wa.me/${BUSINESS.phoneE164}?text=${encodeURIComponent(message)}`;

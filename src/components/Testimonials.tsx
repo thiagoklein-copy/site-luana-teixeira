@@ -3,30 +3,30 @@ import FadeIn from "./FadeIn";
 const TESTIMONIALS = [
   {
     quote:
-      "Cheguei sem saber nem por onde começar a falar. A Ana criou um espaço tão seguro que hoje consigo entender coisas sobre mim que antes eu nem enxergava.",
-    name: "Camila R.",
+      "Encontrei na Luana um espaço onde finalmente consegui parar e me escutar de verdade. Cada sessão foi um convite gentil para olhar pra dentro.",
+    name: "Patrícia M.",
     role: "Terapia individual",
-    initials: "CR",
+    initials: "PM",
   },
   {
     quote:
-      "Levei minha filha adolescente para os atendimentos e a diferença foi enorme. Ela se sente ouvida de verdade, sem julgamento.",
-    name: "Rodrigo M.",
-    role: "Pai de paciente adolescente",
-    initials: "RM",
+      "Depois que me aposentei, sentia que tinha perdido meu lugar no mundo. A Luana me ajudou a encontrar sentido nessa nova fase, com muito respeito ao meu tempo.",
+    name: "Osvaldo T.",
+    role: "Terapia para terceira idade",
+    initials: "OT",
   },
   {
     quote:
-      "Depois que me aposentei, sentia um vazio difícil de explicar. A terapia com a Ana me ajudou a dar sentido para essa nova fase.",
-    name: "Terezinha A.",
-    role: "Terapia individual",
-    initials: "TA",
+      "Sou adolescente e cheguei bem insegura. Ela nunca me fez sentir julgada — hoje consigo falar sobre o que sinto sem medo.",
+    name: "Bruna L.",
+    role: "Terapia para adolescentes",
+    initials: "BL",
   },
 ] as const;
 
 function Stars() {
   return (
-    <div className="flex gap-0.5 text-accent" aria-label="5 estrelas">
+    <div className="flex gap-0.5 text-primary" aria-label="5 estrelas">
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
@@ -52,15 +52,14 @@ export default function Testimonials() {
     >
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <FadeIn className="mx-auto max-w-2xl text-center">
-          <p className="font-script text-lg italic text-primary">Depoimentos</p>
+          <p className="font-display text-base tracking-[0.12em] text-primary">
+            Depoimentos
+          </p>
           <h2
             id="testimonials-heading"
-            className="mt-2 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl"
+            className="mt-2 font-display text-3xl font-normal tracking-wide text-ink sm:text-4xl"
           >
-            O que dizem as pessoas que já{" "}
-            <em className="font-script font-normal italic text-primary">
-              passaram por aqui
-            </em>
+            O que dizem as pessoas que já passaram por aqui
           </h2>
         </FadeIn>
 
@@ -79,13 +78,13 @@ export default function Testimonials() {
                 </blockquote>
                 <footer className="mt-6 flex items-center gap-3">
                   <span
-                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary/15 font-display text-sm font-semibold text-primary-dark"
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary/15 font-display text-sm font-medium text-primary-dark"
                     aria-hidden="true"
                   >
                     {item.initials}
                   </span>
                   <div>
-                    <p className="text-sm font-semibold text-ink">{item.name}</p>
+                    <p className="text-sm font-medium text-ink">{item.name}</p>
                     <p className="text-xs text-ink-muted">{item.role}</p>
                   </div>
                 </footer>

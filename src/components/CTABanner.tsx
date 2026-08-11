@@ -10,12 +10,9 @@ export default function CTABanner() {
       <FadeIn className="mx-auto max-w-3xl px-5 text-center lg:px-8">
         <h2
           id="cta-heading"
-          className="font-display text-3xl font-bold tracking-tight text-cream sm:text-4xl"
+          className="font-display text-3xl font-normal tracking-wide text-cream sm:text-4xl"
         >
-          Vamos{" "}
-          <em className="font-script font-normal italic text-beige">
-            conversar?
-          </em>
+          Vamos conversar?
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-cream/85 sm:text-lg">
           Se algo em você pediu um espaço de escuta, esse pode ser o momento. Me

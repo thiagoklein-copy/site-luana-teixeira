@@ -17,7 +17,7 @@ const STEPS = [
     number: "02",
     title: "Primeira sessão",
     description:
-      "A primeira sessão é um encontro. Quero te conhecer, entender o que te trouxe até aqui e como posso te ajudar. Você terá espaço para falar livremente o que desejar.",
+      "A primeira sessão é um encontro. Quero te conhecer, entender o que te trouxe até aqui e como posso te ajudar, respeitando o seu tempo.",
     checklist: [
       "Um encontro, não um interrogatório",
       "Espaço para falar livremente",
@@ -28,11 +28,11 @@ const STEPS = [
     number: "03",
     title: "O processo",
     description:
-      "A terapia não tem um roteiro fixo. Você compartilha o que desejar, no seu ritmo — pode chorar, rir e falar livremente. Minha função é facilitar seu processo de autoconhecimento.",
+      "O processo terapêutico respeita o seu ritmo e a sua singularidade. Juntas, construímos novos sentidos para as histórias que você carrega.",
     checklist: [
-      "Sem roteiro fixo",
-      "Seu ritmo, suas pautas",
-      "Facilitação do autoconhecimento",
+      "Respeito ao seu tempo",
+      "Construção conjunta de sentidos",
+      "Espaço ético e confidencial",
     ],
   },
 ] as const;
@@ -46,15 +46,14 @@ export default function HowItWorks() {
     >
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <FadeIn className="mx-auto max-w-2xl text-center">
-          <p className="font-script text-lg italic text-primary">Como funciona</p>
+          <p className="font-display text-base tracking-[0.12em] text-primary">
+            Como funciona
+          </p>
           <h2
             id="how-heading"
-            className="mt-2 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl"
+            className="mt-2 font-display text-3xl font-normal tracking-wide text-ink sm:text-4xl"
           >
-            Nossos primeiros{" "}
-            <em className="font-script font-normal italic text-primary">
-              passos juntos
-            </em>
+            Nossos primeiros passos juntas
           </h2>
         </FadeIn>
 
@@ -62,10 +61,10 @@ export default function HowItWorks() {
           {STEPS.map((step, i) => (
             <FadeIn key={step.number} delay={i * 0.1} as="li">
               <article>
-                <p className="font-display text-4xl font-bold text-primary/25 sm:text-5xl">
+                <p className="font-display text-4xl font-medium text-primary/30 sm:text-5xl">
                   {step.number}
                 </p>
-                <h3 className="mt-3 font-display text-xl font-semibold text-ink">
+                <h3 className="mt-3 font-display text-xl font-medium tracking-wide text-ink">
                   {step.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-ink-muted sm:text-[0.95rem]">

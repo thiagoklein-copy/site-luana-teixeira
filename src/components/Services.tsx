@@ -4,22 +4,22 @@ import WhatsAppButton from "./WhatsAppButton";
 
 const SERVICES = [
   {
-    title: "Terapia para Crianças e Adolescentes",
+    title: "Terapia para Adolescentes",
     description:
-      "Um espaço de escuta e acolhimento para as questões da infância e da adolescência — identidade, família, escola e os primeiros grandes sentimentos.",
+      "Um espaço de escuta para as questões próprias da adolescência — identidade, relações e os primeiros grandes desafios emocionais.",
     checklist: [
-      "Escuta respeitosa e sem julgamento",
-      "Linguagem próxima da realidade deles",
-      "Apoio à família no processo",
+      "Escuta ética e sem julgamento",
+      "Respeito ao tempo de cada um",
+      "Espaço para se reconhecer por inteiro",
     ],
   },
   {
     title: "Terapia Individual para Adultos",
     description:
-      "Para quem busca compreender padrões, ansiedades e repetições — um espaço para se escutar além do que é dito.",
+      "Para quem busca compreender ansiedades, relações e momentos de transição — um espaço para construir novos sentidos.",
     checklist: [
       "Escuta psicanalítica individualizada",
-      "Espaço sem roteiro fixo",
+      "Acompanhamento em momentos de transição",
       "Seu ritmo, sua história",
     ],
   },
@@ -29,7 +29,7 @@ const SERVICES = [
       "Acolhimento sensível para as questões próprias do envelhecer, das perdas e dos recomeços, com respeito ao tempo de cada história.",
     checklist: [
       "Escuta sensível às perdas e recomeços",
-      "Respeito ao tempo de cada pessoa",
+      "Respeito à singularidade de cada fase",
       "Espaço seguro para elaborar histórias",
     ],
   },
@@ -44,17 +44,14 @@ export default function Services() {
     >
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <FadeIn className="mx-auto max-w-2xl text-center">
-          <p className="font-script text-lg italic text-primary">
+          <p className="font-display text-base tracking-[0.12em] text-primary">
             Como posso te ajudar
           </p>
           <h2
             id="services-heading"
-            className="mt-2 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl"
+            className="mt-2 font-display text-3xl font-normal tracking-wide text-ink sm:text-4xl"
           >
-            Atendimento para cada{" "}
-            <em className="font-script font-normal italic text-primary">
-              fase da vida
-            </em>
+            Um espaço para cada fase da vida
           </h2>
           <p className="mt-4 text-base leading-relaxed text-ink-muted sm:text-lg">
             Cada processo é único. Trabalho com escuta psicanalítica, respeitando
@@ -66,7 +63,7 @@ export default function Services() {
           {SERVICES.map((service, i) => (
             <FadeIn key={service.title} delay={i * 0.08} as="li">
               <article className="flex h-full flex-col border border-primary/10 bg-cream p-7 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift">
-                <h3 className="font-display text-xl font-semibold leading-snug text-ink">
+                <h3 className="font-display text-xl font-medium leading-snug tracking-wide text-ink">
                   {service.title}
                 </h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-muted sm:text-[0.95rem]">
@@ -81,7 +78,7 @@ export default function Services() {
                   <WhatsAppButton
                     label="Agendar conversa"
                     className="w-full"
-                    message="Olá, Ana! Vi seu site e gostaria de agendar uma conversa sobre atendimento."
+                    message="Olá, Luana! Vi seu site e gostaria de agendar uma conversa sobre atendimento."
                   />
                 </div>
               </article>

@@ -2,19 +2,18 @@
 @config "../../tailwind.config.ts";
 
 @theme inline {
-  --color-primary: #6b7156;
-  --color-primary-dark: #4a4e39;
-  --color-cream: #f7f3ea;
-  --color-beige: #efe8d8;
-  --color-accent: #b5623b;
-  --color-ink: #2e2c24;
-  --color-ink-muted: #6e6b5e;
-  --font-display: var(--font-playfair);
-  --font-script: var(--font-cormorant);
+  --color-primary: #b39b72;
+  --color-primary-dark: #8c7354;
+  --color-cream: #e8e2d6;
+  --color-beige: #f2ede2;
+  --color-whatsapp: #25d366;
+  --color-ink: #3a362c;
+  --color-ink-muted: #7a7566;
+  --font-display: var(--font-cormorant);
   --font-sans: var(--font-work-sans);
-  --shadow-soft: 0 8px 30px rgba(46, 44, 36, 0.08);
-  --shadow-lift: 0 12px 40px rgba(46, 44, 36, 0.12);
-  --shadow-glass: 0 8px 32px rgba(46, 44, 36, 0.15);
+  --shadow-soft: 0 8px 30px rgba(58, 54, 44, 0.06);
+  --shadow-lift: 0 12px 40px rgba(58, 54, 44, 0.1);
+  --shadow-glass: 0 8px 32px rgba(58, 54, 44, 0.12);
 }
 
 html {
@@ -22,12 +21,12 @@ html {
 }
 
 body {
-  background-color: #f7f3ea;
-  color: #2e2c24;
+  background-color: #e8e2d6;
+  color: #3a362c;
   font-family: var(--font-work-sans), sans-serif;
 }
 
 ::selection {
-  background-color: #6b7156;
-  color: #f7f3ea;
+  background-color: #b39b72;
+  color: #f2ede2;
 }

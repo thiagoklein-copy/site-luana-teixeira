@@ -7,7 +7,7 @@ import WhatsAppButton from "./WhatsAppButton";
 
 const OBJECTIVES = [
   "Terapia para mim (adulto)",
-  "Terapia para meu filho(a)",
+  "Terapia para adolescente",
   "Terapia para idoso da família",
   "Ainda não sei, quero conversar",
 ] as const;
@@ -22,7 +22,7 @@ export default function Contact() {
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
     const message = [
-      `Olá, Ana! Meu nome é ${nome || "—"}.`,
+      `Olá, Luana! Meu nome é ${nome || "—"}.`,
       `Telefone/WhatsApp: ${telefone || "—"}.`,
       `Objetivo: ${objetivo}.`,
       "Vi seu site e gostaria de agendar uma conversa.",
@@ -38,16 +38,14 @@ export default function Contact() {
     >
       <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <FadeIn>
-          <p className="font-script text-lg italic text-primary">
+          <p className="font-display text-base tracking-[0.12em] text-primary">
             Vamos conversar
           </p>
           <h2
             id="contact-heading"
-            className="mt-2 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl"
+            className="mt-2 font-display text-3xl font-normal tracking-wide text-ink sm:text-4xl"
           >
-            O primeiro passo pode ser mais{" "}
-            <em className="font-script font-normal italic text-primary">leve</em>{" "}
-            do que parece
+            O primeiro passo pode ser mais leve do que parece
           </h2>
           <p className="mt-4 text-base leading-relaxed text-ink-muted sm:text-lg">
             Me conta um pouco do que você busca. Responderei pelo WhatsApp para
@@ -152,7 +150,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-accent px-6 py-3.5 text-sm font-medium text-cream shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#a35532] hover:shadow-lift focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-whatsapp px-6 py-3.5 text-sm font-medium text-white shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#1ebe57] hover:shadow-lift focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-whatsapp"
               >
                 Quero agendar minha conversa
               </button>

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { BUSINESS, NAV_LINKS } from "@/lib/constants";
+import Monogram from "./Monogram";
 import WhatsAppButton from "./WhatsAppButton";
 
 export default function Header() {
@@ -31,13 +32,16 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
-        <a href="#topo" className="group min-w-0">
-          <p className="font-display text-lg font-bold tracking-tight text-ink transition-colors group-hover:text-primary sm:text-xl">
-            {BUSINESS.shortName}
-          </p>
-          <p className="truncate text-[11px] tracking-wide text-ink-muted sm:text-xs">
-            {BUSINESS.tag}
-          </p>
+        <a href="#topo" className="group flex min-w-0 items-center gap-3">
+          <Monogram size="sm" />
+          <span className="min-w-0">
+            <p className="font-display text-lg font-medium tracking-wide text-ink transition-colors group-hover:text-primary sm:text-xl">
+              {BUSINESS.shortName}
+            </p>
+            <p className="truncate text-[11px] tracking-wide text-ink-muted sm:text-xs">
+              {BUSINESS.tag}
+            </p>
+          </span>
         </a>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Principal">
